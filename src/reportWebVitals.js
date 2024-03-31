@@ -1,12 +1,8 @@
-const reportWebVitals = onPerfEntry => {
+const reportWebVitals = (onPerfEntry) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
+    // This function will be called by React with performance metrics
+    // You can send these metrics to an analytics endpoint or log them to the console
+    // Example: onPerfEntry({ name, entryType, startTime, duration, id, ... });
   }
 };
 
